@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class fun
+{
+    public:
+    void sum(int x, int y)
+    {
+        cout<<x+y<<endl;
+    }
+    void sum(int x, int y, int z)
+    {
+        cout<<x+y+z<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+   fun sums;
+    sums.sum(10,20);
+    sums.sum(10,20,30);
+    return 0;
+}
