@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class sum
+{
+    private:
+    int num1 , num2;
+    public:
+    void  inttData(int n1,int n2)
+    {
+        num1=n1;
+        num2=n2;
+    }
+    void swap()
+    {
+        int temp;
+        temp=num1;
+       num1=num2;
+       num2=temp;
+        cout<<num1<<" "<<num2<<endl;
+    }
+};
+    int main()
+    {
+       sum maths;
+       maths.inttData(20,40);
+       cout<<"swati"<<endl;
+        maths.swap();
+        return 0;
+    }
