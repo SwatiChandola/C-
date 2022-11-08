@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class sum
+{
+    private:
+    int num1 , num2;
+    public:
+    int inttData(int n1,int n2)
+    {
+        num1=n1;
+        num2=n2;
+    }
+    int add()
+    {
+        return num1+num2;
+    }
+};
+    int main()
+    {
+       sum math;
+       math.inttData(2,2);
+       cout<<"swati"<<endl;
+        cout<<"sum of two number="<<math.add()<<endl;
+        return 0;
+    }
