@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class a
+{
+    public:
+    void getdata()
+    {
+        cout<<"hello"<<endl;
+    }
+};
+class b: public a
+{
+    public:
+    void getdata1()
+    {
+        cout<<"welcome"<<endl;
+    }
+};
+class c:public b
+{
+    public:
+    void getdata2()
+    {
+        cout<<"thank you"<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    c d1;
+    d1.getdata();
+    d1.getdata1();
+    d1.getdata2();
+    return 0;
+}
