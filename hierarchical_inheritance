@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class A
+{
+    public:
+    void get_a()
+    {
+        cout<<"Hello"<<endl;
+    }
+};
+class B: public A
+{
+    public:
+    void get_b()
+    {
+        cout<<"Welcome"<<endl;
+    }
+};
+class C: public A
+{
+    public:
+    void get_c()
+    {
+        cout<<"Swati"<<endl;
+    }
+};
+class D: public A
+{
+    public:
+    void get_d()
+    {
+        cout<<"Thank You"<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    B obj;
+    obj.get_a();
+    obj.get_b();
+    C obj1;
+    obj1.get_c();
+    D obj2;
+    obj2.get_d();
+    return 0;
+}
