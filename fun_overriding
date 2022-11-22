@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class Base 
+{
+   public:
+    void print() 
+    {
+        cout << "base fun overriding" << endl;
+    }
+};
+class Derived : public Base 
+{
+   public:
+    void print() 
+    {
+        cout << "function overriding" << endl;
+    }
+};
+int main() 
+{
+    cout<<"swati"<<endl;
+    Derived obj;
+    obj.print();
+    return 0;
+}
