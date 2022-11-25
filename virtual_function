@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class base
+{
+    public:
+    virtual void print()
+    {
+        cout<<"print base class"<<endl;
+    }
+    void show()
+    {
+        cout<<"show base class"<<endl;
+    }
+};
+class drived:public base
+{
+    void print()
+    {
+        cout<<"print drived class"<<endl;
+    }
+    void show()
+    {
+        cout<<"show drived class"<<endl;
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    base *bptr;
+    drived d;
+    bptr=&d;
+    bptr->print();
+    bptr->show();
+    return 0;
+}
