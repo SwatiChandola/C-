@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class employee
+{
+	int   age;
+	char  name[20];
+	char address[10];
+	public:
+		void getdata()
+		{
+		    cout<<"Enter employee name: ";
+	        cin>>name;
+	        cout<<"Enter employee age:";
+	        cin>>age;
+	        cout<<"Enter employee address:";
+	        cin>>address;
+		}
+		void showdata()
+		{
+		    cout<<"\n\n**** Details of  Employee ****";
+	        cout<<"\nEmployee Name      :  "<<name;
+	        cout<<"\nEmployee age       :  "<<age;
+	        cout<<"\nEmployee address   :  "<<address;
+		}
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    employee emp;
+    emp.getdata();
+    emp.showdata();
+    return 0;
+}
