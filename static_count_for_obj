@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class counter
+{
+   private:
+      static int count;
+   public:
+      counter() 
+      {
+         cout << "Calling Constructor" << endl;
+         count++;
+         cout<<"count:"<<count<<endl;
+      } 
+      static int display() 
+      {
+         return count;
+      }
+};
+int counter::count;
+int main() 
+{
+   cout<<"swati"<<endl;
+   counter obj1, obj2, obj3;
+   int s;
+   s = counter::display();
+   cout << "Number of objects:" << s;
+}
