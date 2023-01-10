@@ -1,0 +1,39 @@
+#include<iostream>
+#include<istream>
+#include<fstream>
+using namespace std;
+int main()
+{
+    cout<<"swati"<<endl;
+    ofstream fout;
+    fout.open("country");
+    fout<<"united states of america";
+    fout<<"united kingdom";
+    fout<<"south korea";
+    fout.close();
+    fout.open("capital");
+    fout<<"washington\n";
+    fout<<"london\n";
+    fout<<"seoul\n";
+    fout.close();
+    const int N=80;
+    char line[N];
+    ifstream fin;
+    fin.open("country");
+    cout<<"contents of country file\n";
+    while(fin)
+    {
+        fin.getline(line,N);
+        cout<<line;
+    }
+    fin.close();
+    fin.open("capital");
+    cout<<"\n contents of capital file";
+    while(fin)
+    {
+       fin.getline(line,N);
+       cout<<line;
+    }
+    fin.close();
+    return 0;
+}
