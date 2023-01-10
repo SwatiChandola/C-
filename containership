@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class first
+{
+    public:
+    void showf()
+    {
+        cout << "Hello from first class\n";
+    }
+};
+class second 
+{
+    first f;
+    public:
+    second()
+    {
+        f.showf();
+    }
+};
+int main()
+{
+    cout<<"swati"<<endl;
+    second s;
+}
